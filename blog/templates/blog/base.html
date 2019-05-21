@@ -1,23 +1,136 @@
-
 {% load staticfiles %}
-<html>
-    <head>
-        <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-        <div class="page-header">
-            <h1><a href="/">Django Girls Blog</h1>
-        </div>
-        <div class="content container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>ISHTIAK</title>
+
+<link rel="stylesheet" href="{% static 'c/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'c/font-awesome.min.css' %}">
+
+<!-- Main css -->
+<link rel="stylesheet" href="{% static 'c/style.css' %}">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-wordpress">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+
+
+
+<!-- Home Section -->
+
+<section id="home" class="main-home parallax-section">
+     <div class="overlay"></div>
+     <div id="particles-js"></div>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <h1>Hello! This is Ishtiak</h1>
+                    <h3>Welcome to the Unexpressed Happiness!!</h3>
+                    <a href="#blog" class="smoothScroll btn btn-default">Go to the Blog</a>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+<!-- Blog Section -->
+
+<section id="blog">
+     <div class="container">
+          <div class="row">
+
+               
+                         
+                         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
                 {% block content %}
                 {% endblock %}
                 </div>
             </div>
-    </body>
+
+                    </div>
+
+                    
+                        
+                         
+                   
+    
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+<!-- Footer Section -->
+
+<footer>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-5 col-md-offset-1 col-sm-6">
+                    <h3>About the Author</h3>
+                    <p>রঙে লিখি ও শব্দে আঁকি। সহজ বাংলায় চিত্রলেখা। চিত্রলেখার কাজটি ভালবাসি বিচিত্রভাবে!!</p>
+                    <div class="footer-copyright">
+                         <p>Copyright &copy; 2019 Ishtiak Linkon's Blog</p>
+                    </div>
+               </div>
+
+               <div class="col-md-4 col-md-offset-1 col-sm-6">
+                    <h3>To share your writings</h3>
+                    <p><i class="fa fa-globe"></i> Write something</p>
+                    <p><i class="fa fa-phone"></i> +088</p>
+                    <p><i class="fa fa-save"></i> mail</p>
+               </div>
+
+               <div class="clearfix col-md-12 col-sm-12">
+                    <hr>
+               </div>
+
+               <div class="col-md-12 col-sm-12">
+                    <ul class="social-icon">
+                         <li><a href="https://www.facebook.com/ishtiak.linkon" class="fa fa-facebook"></a></li>
+                         <li><a href="#" class="fa fa-twitter"></a></li>
+                         <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+               </div>
+               
+          </div>
+     </div>
+</footer>
+
+<!-- Back top -->
+<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- SCRIPTS -->
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/particles.min.js' %}"></script>
+<script src="{% static 'js/app.js' %}"></script>
+<script src="{% static 'js/jquery.parallax.js' %}"></script>
+<script src="{% static 'js/smoothscroll.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+
+
+</body>
 </html>
